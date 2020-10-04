@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Birthday Calendar</title>
+        <link href="./css/main.css" rel = "stylesheet">
+        <link href="./css/card.css" rel = "stylesheet">
+
+    </head>
+    <body>
+        <div class="root-container">
+        <div class="page-heading">Birthday Cal</div>
+        <div class="card-container" id ='card-container'>
+            <!-- Content will load dynamically -->
+        </div>
+        <div class="input-container">
+
+            <div class="input-section-1">
+                <textarea class="json-input-area" id="json-input-area"></textarea>
+            </div>
+            <div class="input-section-2">
+                <div class="input-section-2-sub-section">
+                <label>Year</label>
+                <input type="text" id="year-input"/>
+                <button class="update-button" onclick="updateButtonHandler()">update</button>
+            </div>
+            </div>
+        </div>
+    </div>
+        <!-- Js section -->
+        <script src='./js/data.js'></script>
+        <script src="./js/card.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
